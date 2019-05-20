@@ -1,0 +1,85 @@
+body{
+    background:blanchedalmond;
+    text-align: center;
+     background-image: url("head.png");
+     font-size:20px;
+ 
+}
+input[type=text]{
+    width:30%;
+    padding:12px 20px;
+    border-radius:30px;
+    border:none;
+    cursor:auto;
+  
+}
+input[type=number]{
+    width:15.0%;
+    padding:12px 20px;
+    border-radius:30px;
+    border:none;
+    cursor:auto;
+    
+}
+input:focus{
+    background-color:lightblue;
+}
+button{
+    width:10%;
+    padding:12px 20px;
+    border-radius:30px;
+    border:none;
+    cursor:auto;
+    background-color:antiquewhite;
+}
+button:hover{
+    background-color:lavenderblush;
+
+}
+input[type=reset]{
+    width:10%;
+    padding:12px 20px;
+    border-radius:30px;
+    border:none;
+    cursor:auto;
+    background-color:antiquewhite;
+
+}
+input[type=reset]:hover{
+    background-color:lavenderblush;
+}
+select{
+    width:10%;
+    padding:12px 20px;
+    border-radius:30px;
+    border:none;
+    cursor:auto;
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+
+
+div.head{
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+    width:600px;
+  }
+  
+  table, th, td {
+    border-bottom:  1.5px solid #ddd;
+  }
+  input:required:invalid {
+    border:3px solid red;
+  }
+  input:required:valid {
+    border:3px solid green;
+  }
+    
