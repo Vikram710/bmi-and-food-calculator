@@ -14,6 +14,8 @@ document.getElementById("submit3").addEventListener("click",function(event){
     event.preventDefault();
     calwat();
 });
+document.getElementById("save").addEventListener("click",local_storage);
+document.getElementById("delete").addEventListener("click",delete_storage);
 
 
 
@@ -143,6 +145,7 @@ function calwat(){
     }
 }
 function local_storage(){
+    
     localStorage.setItem("height",  parseFloat(document.getElementById("height").value));
     localStorage.setItem("weight",  parseFloat(document.getElementById("weight").value));
     localStorage.setItem("age",  parseFloat(document.getElementById("age").value));
@@ -152,16 +155,34 @@ function local_storage(){
     localStorage.setItem("protien",  parseFloat(document.getElementById("protien").value));
     localStorage.setItem("water",  parseFloat(document.getElementById("water").value));
 
+    var ex=document.getElementById("excercise");
+    var selected=ex.options[ex.selectedIndex].text;
+    localStorage.setItem("ex", selected );
+
+    var fe=document.getElementById("female");
+    var ma =document.getElementById("male");
+    localStorage.setItem("male",ma.checked);
+    localStorage.setItem("female",fe.checked);
+    
+
+
 
 }
 function on_load(){
-    document.getElementById('height').innerHTML=localStorage.getItem("height");
-    document.getElementById('weight').innerHTML=localStorage.getItem("weight");
-    document.getElementById('age').innerHTML=localStorage.getItem("age");
-    document.getElementById('food').innerHTML=localStorage.getItem("food");
-    document.getElementById('carbs').innerHTML=localStorage.getItem("carbs");
-    document.getElementById('fat').innerHTML=localStorage.getItem("fat");
-    document.getElementById('protien').innerHTML=localStorage.getItem("protien");
-    document.getElementById('water').innerHTML=localStorage.getItem("water");
+    document.querySelector('#height').value=localStorage.getItem("height");
+    document.querySelector('#weight').value=localStorage.getItem("weight");
+    document.querySelector('#age').value=localStorage.getItem("age");
+    document.querySelector('#food').value=localStorage.getItem("food");
+    document.querySelector('#carbs').value=localStorage.getItem("carbs");
+    document.querySelector('#fat').value=localStorage.getItem("fat");
+    document.querySelector('#protien').value=localStorage.getItem("protien");
+    document.querySelector('#water').value=localStorage.getItem("water");
+
+    document.querySelector('#male').checked=localStorage.getItem("male");
+    document.querySelector('#female').checked=localStorage.getItem("female");
   
+}
+
+function delete_storage(){
+    localStorage.clear();
 }
