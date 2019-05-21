@@ -168,7 +168,7 @@ function local_storage(){
 
 
 }
-function on_load(){
+/*function on_load(){
     document.querySelector('#height').value=localStorage.getItem("height");
     document.querySelector('#weight').value=localStorage.getItem("weight");
     document.querySelector('#age').value=localStorage.getItem("age");
@@ -181,7 +181,7 @@ function on_load(){
     document.querySelector('#male').checked=localStorage.getItem("male");
     document.querySelector('#female').checked=localStorage.getItem("female");
   
-}
+}*/
 
 function delete_storage(){
     localStorage.clear();
