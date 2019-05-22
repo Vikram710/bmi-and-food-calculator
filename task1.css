@@ -82,4 +82,60 @@ table {
   input:required:valid {
     border:3px solid green;
   }
-    
+@media screen and (max-width:1000px)
+{
+    body{
+        background:blanchedalmond;
+        text-align:left;
+         background-image: url("head.png");
+         font-size:20px;
+        }
+        button{
+            width:30%;
+            padding:12px 20px;
+            border-radius:30px;
+            border:none;
+            cursor:auto;
+            background-color:antiquewhite;
+        }
+        input[type=text]{
+            width:30%;
+            padding:12px 20px;
+            border-radius:30px;
+            border:none;
+            cursor:auto;
+          
+        }
+        input[type=number]{
+            width:30.0%;
+            padding:12px 20px;
+            border-radius:30px;
+            border:none;
+            cursor:auto;
+        }
+        input[type=reset]{
+            width:30%;
+            padding:12px 20px;
+            border-radius:30px;
+            border:none;
+            cursor:auto;
+            background-color:antiquewhite;
+        }
+        select{
+            width:30%;
+            padding:12px 20px;
+            border-radius:30px;
+            border:none;
+            cursor:auto;
+        }
+        table {
+            border-collapse: collapse;
+            margin-left:10px; 
+            
+            text-align: center;
+            width:500px;
+          }
+
+        
+        
+}
